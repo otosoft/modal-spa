@@ -3,9 +3,9 @@
  */
 document.addEventListener("DOMContentLoaded", function() {
     //Cambiar URL cuando se requiera
-    loadCSSADL('http://localhost/modal/css/app.css'); // Carga el archivo CSS
+    loadCSSADL('http://localhost/modal/app/bogota/css/app.css'); // Carga el archivo CSS
     //Cambiar URL cuando se requiera
-    loadScriptADL('http://localhost/modal/app.js'); // Carga el archivo JavaScript
+    loadScriptADL('http://localhost/modal/app/bogota/app.js'); // Carga el archivo JavaScript
   });
   
   /**
