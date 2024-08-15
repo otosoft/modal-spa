@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Onest", sans-serif;
+    font-style: normal;
+}
+
+.adl-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.adl-btn, .adl-btn:hover, .adl-btn:visited {
+    background: linear-gradient(82deg, #0014a2 5%, #0048db 100%);
+    border: none;
+    border-radius: 50px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.adl-hidden {
+    display: none !important;
+}
+
+.adl-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 1000;
+}
+
+.adl-modal-content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 78vh;
+    max-height: 627px;
+    max-width: 375px;
+    padding: 20px;
+    transition: height 0.5s ease-in-out;
+    width: 100%;
+}
+
+.adl-modal-close-btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.adl-modal-close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.adl-modal-container-content, .adl-modal-container-content > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.adl-steps-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.adl-step {
+    display: none;
+    height: 100%;
+}
+
+.adl-step.adl-active {
+    display: flex;
+}
+
+.adl-navigation-buttons {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.adl-navigation-buttons button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.adl-navigation-buttons button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.adl-img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Banco AvVillas*/
+
+.adl-step-avvillas {
+    display: flex;
+    color: #252B31;
+    flex-direction: column;
+    text-align: center;
+}
+
+.adl-step-avvillas .dots > div {
+    background: #838F9A;
+    border-radius: 20px;
+    display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+    width: 10px;
+}
+
+.adl-step-avvillas .dots > div.dot-active {
+    background: #0048DB;
+    border-radius: 20px;
+    display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+    width: 30px;
+}
+
+
+.adl-step-avvillas > div:nth-child(4){
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+}
+
+.adl-step-avvillas h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.7rem 0;
+}
+
+.adl-step-avvillas img {
+    margin: 1rem 0;
+    max-width: 250px;
+}
+
+.adl-step-avvillas p {
+    text-align: justify;
+}
+
+.adl-step-next-btn-avvillas {
+    background: none;
+    border: none;
+    color: #0048DB;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.adl-step-next-btn-avvillas-inicio {
+    border: none;
+    border-radius: 100px;
+    color: #FFF;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: normal;
+    width: 100%;
+}
+
+.adl-step-back-btn-avvillas {
+    background: #FFF;
+    border: 1px solid #0043a9;
+    border-radius: 100px;
+    color: #0043a9;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 50px;
+}
+
+.adl-btn-avvillas, .adl-btn-avvillas:hover, .adl-btn-avvillas:visited {
+    background-color: #0043a9;
+    min-width: 100px;
+}
