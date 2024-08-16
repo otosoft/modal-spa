@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    font-family: "Onest", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
 }
 
@@ -30,17 +31,26 @@ body {
     max-width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    text-decoration: none !important;
 }
 
 .adl-btn-inicio {
-    background: linear-gradient(82deg, #0014a2 5%, #0048db 100%);
+    background: linear-gradient(to bottom, #1e6ab8, #0a4ea2);
     border: none;
-    border-radius: 50px;
-    color: #FFFFFF;
-    display: inline-block;
-    padding: 1rem;
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 15px 0px !important;
+    border-radius: 5px;
     text-align: center;
-    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-decoration: none !important;
 }
 
 .adl-hidden {
@@ -72,12 +82,17 @@ body {
     padding: 20px;
     transition: height 0.5s ease-in-out;
     width: 100%;
+    position: relative;
 }
 
 .adl-modal-close-btn-container {
+    position: absolute;
     display: flex;
     justify-content: flex-end;
-    display: none; /* ocultar boton close */
+    position: absolute; 
+    top: 20px;          
+    right: 20px;        
+    z-index: 10;        
 }
 
 .adl-modal-close-btn {
@@ -85,7 +100,7 @@ body {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    display: none; /* ocultar boton close */
+    color: white;        
 }
 
 .adl-modal-container-content, .adl-modal-container-content > div {
@@ -171,7 +186,7 @@ body {
     padding: 10px 20px;
 }
 
-.adl-step-avvillas {
+.adl-step-occidente {
     display: flex;
     color: #252B31;
     flex-direction: column;
@@ -183,7 +198,7 @@ body {
     padding: 20px;
 }
 
-.adl-step-avvillas .dots > div {
+.adl-step-occidente .dots > div {
     background: transparent;
     border-radius: 0; 
     display: inline-block;
@@ -196,7 +211,7 @@ body {
     margin: 0 4px;
 }
 
-.adl-step-avvillas .dots > div.dot-active {
+.adl-step-occidente .dots > div.dot-active {
     background: transparent; 
     border-radius: 0; 
     display: inline-block;
@@ -208,7 +223,7 @@ body {
     position: relative;
 }
 
-.adl-step-avvillas .dots > div.dot-active::before {
+.adl-step-occidente .dots > div.dot-active::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -224,13 +239,13 @@ body {
 }
 
 
-.adl-step-avvillas > div:nth-child(4){
+.adl-step-occidente > div:nth-child(4){
     align-items: center;
     display: flex;
     flex-grow: 1;
 }
 
-.adl-step-avvillas h3 {
+.adl-step-occidente h3 {
     font-size: 1.3rem;
     font-weight: 600;
     margin: 0.7rem 0;
@@ -240,10 +255,11 @@ body {
     padding-top: 10px;
     font-size: 0.8rem !important;
     font-weight: 700 !important;
+    text-align: center;
 }
 
 
-.adl-step-avvillas img {
+.adl-step-occidente img {
     max-width: 250px;
 }
 
@@ -258,11 +274,11 @@ body {
     color: #77818b;
 }
 
-.adl-step-avvillas p {
+.adl-step-occidente p {
     text-align: justify;
 }
 
-.adl-step-next-btn-avvillas {
+.adl-step-next-btn-occidente {
     background: linear-gradient(to bottom, #1e6ab8, #0a4ea2);
     border: none;
     color: white;
@@ -282,7 +298,7 @@ body {
 
 
 
-.adl-step-next-btn-avvillas-inicio {
+.adl-step-next-btn-occidente-inicio {
     border: none;
     border-radius: 100px;
     color: #FFF;
@@ -292,7 +308,7 @@ body {
     width: 100%;
 }
 
-.adl-step-back-btn-avvillas {
+.adl-step-back-btn-occidente {
     background: #FFF;
     border: 1px solid #0043a9;
     border-radius: 100px;
@@ -303,7 +319,7 @@ body {
     width: 50px;
 }
 
-.adl-btn-avvillas, .adl-btn-avvillas:hover, .adl-btn-avvillas:visited {
+.adl-btn-occidente, .adl-btn-occidente:hover, .adl-btn-occidente:visited {
     background-color: #0043a9;
     min-width: 100px;
 }

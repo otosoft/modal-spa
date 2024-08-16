@@ -53,14 +53,14 @@ export function stepsComponent(stepsContent) {
   const nextButton = document.createElement("button");
   nextButton.id = "nextBtn";
   nextButton.classList.add("adl-btn");
-  nextButton.classList.add("adl-step-next-btn-avvillas-inicio");
+  nextButton.classList.add("adl-step-next-btn-occidente-inicio");
   nextButton.textContent = "CONOCE MÁS";
 
   // Crea el botón finalizar
   const finishButton = document.createElement("button");
   finishButton.id = "finishBtn";
   finishButton.classList.add("adl-btn");
-  finishButton.classList.add("adl-step-next-btn-avvillas-inicio");
+  finishButton.classList.add("adl-step-next-btn-occidente-inicio");
   finishButton.textContent = "Entendido";
   finishButton.classList.add("adl-hidden"); // Oculta el botón finalizar inicialmente
 
@@ -92,7 +92,7 @@ export function stepsComponent(stepsContent) {
       currentStep++; // Aumenta el índice del paso actual
       steps[currentStep].classList.add("adl-active"); // Activa el nuevo paso siguiente
     }
-    //Evento personalizado para avvillas que cambia el alto del modal del paso 1 al 2
+    //Evento personalizado para occidente que cambia el alto del modal del paso 1 al 2
     if (currentStep == 1) {
       const step1Event = new CustomEvent("steps1Event", {
         // Dispara un evento personalizado
@@ -105,12 +105,11 @@ export function stepsComponent(stepsContent) {
     if (
       currentStep == 1 ||
       currentStep == 2 ||
-      currentStep == 3 ||
-      currentStep == 4
+      currentStep == 3
     ) {
       nextButton.classList.remove("adl-btn");
-      nextButton.classList.remove("adl-step-next-btn-avvillas-inicio");
-      nextButton.classList.add("adl-step-next-btn-avvillas");
+      nextButton.classList.remove("adl-step-next-btn-occidente-inicio");
+      nextButton.classList.add("adl-step-next-btn-occidente");
       nextButton.textContent = "siguiente";
     }
     //Fin del evento personalizado
@@ -148,11 +147,14 @@ export function stepsComponent(stepsContent) {
   closeButton.classList.add("adl-close-btn", "adl-hidden"); // Oculto inicialmente
   closeButton.textContent = "Lo veré después";
 
+  const containerCloseTxt = document.getElementById("adlModalContainer");
+
   // Evento click del botón cerrar
   closeButton.addEventListener("click", () => {
-    // agregar evento dle clic
+    containerCloseTxt.classList.add('adl-hidden');
   });
 
+  
   container.appendChild(closeButton); // Agrega el botón cerrar al final
 
   function toggleButtons() {

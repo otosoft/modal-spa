@@ -13,11 +13,10 @@ export async function adlMain() {
     loadTemplate("templates/step2.html"), 
     loadTemplate("templates/step3.html"), 
     loadTemplate("templates/step4.html"),
-    loadTemplate("templates/step5.html")
   ]
 
   Promise.all(templates)
-    .then(([step1HTML, step2HTML, step3HTML, step4HTML, step5HTML]) => {
+    .then(([step1HTML, step2HTML, step3HTML, step4HTML]) => {
       // Obtener el id de la app principal
       const app = document.getElementById('adlApp');
       
@@ -26,7 +25,6 @@ export async function adlMain() {
         step2HTML,
         step3HTML,
         step4HTML,
-        step5HTML,
       ];
 
       // Generar evento para el botón que dispara el modal
@@ -54,7 +52,7 @@ document.addEventListener('stepsFinished', (e) => {
   console.log(e.detail.message);
 });
 
-// Evento personalizado para avvillas que cambia el alto del modal del paso 1 al 2
+// Evento personalizado para occidente que cambia el alto del modal del paso 1 al 2
 document.addEventListener('steps1Event', (e) => {
   const div = document.getElementById('adlModalContainerContent');
   div.style.height = '627px'; // Cambia la altura 

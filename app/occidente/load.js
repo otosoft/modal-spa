@@ -3,9 +3,9 @@
  */
 document.addEventListener("DOMContentLoaded", function() {
     //Cambiar URL cuando se requiera
-    loadCSSADL('http://localhost/modal/app/avvillas/css/app.css'); // Carga el archivo CSS
+    loadCSSADL('http://localhost/modal/app/occidente/css/app.css'); // Carga el archivo CSS
     //Cambiar URL cuando se requiera
-    loadScriptADL('http://localhost/modal/app/avvillas/app.js'); // Carga el archivo JavaScript
+    loadScriptADL('http://localhost/modal/app/occidente/app.js'); // Carga el archivo JavaScript
   });
   
   /**
