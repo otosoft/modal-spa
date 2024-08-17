@@ -54,6 +54,6 @@ document.addEventListener('stepsFinished', (e) => {
 
 // Evento personalizado para occidente que cambia el alto del modal del paso 1 al 2
 document.addEventListener('steps1Event', (e) => {
-  const div = document.getElementById('adlModalContainerContent');
-  div.style.height = '627px'; // Cambia la altura 
+  //const div = document.getElementById('adlModalContainerContent');
+  //div.style.height = '627px'; // Cambia la altura 
 });
