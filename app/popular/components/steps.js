@@ -39,7 +39,7 @@ export function stepsComponent(stepsContent) {
   prevButton.id = "prevBtn";
   prevButton.classList.add("adl-step-back-btn-popular");
   prevButton.disabled = true; // Deshabilita el botón anterior inicialmente
-  prevButton.classList.add("adl-hidden"); // Oculta el botón anterior en la primera vista
+  prevButton.classList.add("adl-hidden-back"); // Oculta el botón anterior en la primera vista
 
   // Inserta un ícono SVG directamente dentro del botón con una clase personalizada
   const svgIconatras = `
@@ -130,7 +130,7 @@ export function stepsComponent(stepsContent) {
 
   // Función para actualizar el estado de los botones de navegación
   function toggleButtons() {
-    prevButton.classList.toggle("adl-hidden", currentStep === 0); // Oculta el botón anterior en el primer paso
+    prevButton.classList.toggle("adl-hidden-back", currentStep === 0); // Oculta el botón anterior en el primer paso
     prevButton.disabled = currentStep === 0; // Deshabilita el botón anterior en el primer paso
     nextButton.classList.toggle("adl-hidden", currentStep === steps.length - 1); // Oculta el botón siguiente en el último paso
     finishButton.classList.toggle(

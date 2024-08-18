@@ -104,8 +104,14 @@ body {
   cursor: pointer;
 }
 
+.adl-hidden-back {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .adl-navigation-buttons button[disabled] {
-  opacity: 0.5;
+  opacity: 1.5;
   cursor: not-allowed;
 }
 
@@ -203,10 +209,6 @@ body {
 .adl-breadcrumb-dot.active {
   background-color: #10b811;
   /* Color de las bolitas activas */
-}
-
-.adl-hidden {
-  display: none;
 }
 
 #finishBtn {
