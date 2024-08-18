@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.adl-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.adl-btn, .adl-btn:hover, .adl-btn:visited {
+    background: linear-gradient(to bottom, #1e6ab8, #0a4ea2);
+    border: none;
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 15px 0px !important;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 15px auto;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-decoration: none !important;
+}
+
+.adl-btn-inicio {
+    background: linear-gradient(to bottom, #1e6ab8, #0a4ea2);
+    border: none;
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 15px 0px !important;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 15px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-decoration: none !important;
+}
+
+.adl-hidden {
+    display: none !important;
+}
+
+.adl-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 1000;
+}
+
+.adl-modal-content{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 627px;
+    max-width: 375px;
+    padding: 20px;
+    transition: height 0.5s ease-in-out;
+    width: 100%;
+    position: relative;
+}
+
+.adl-modal-close-btn-container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute; 
+    top: 20px;          
+    right: 20px;        
+    z-index: 10;        
+}
+
+.adl-modal-close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;        
+}
+
+.adl-modal-container-content, .adl-modal-container-content > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.adl-steps-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.adl-step {
+    display: none;
+    height: 100%;
+}
+
+.adl-step.adl-active {
+    display: flex;
+}
+
+.adl-navigation-buttons {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.adl-navigation-buttons button {
+    background: linear-gradient(to bottom, #1e6ab8, #0a4ea2);
+    border: none;
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 15px 0px !important;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 15px auto;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.adl-navigation-buttons button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.adl-img-fluid {
+    max-width: 100% !important;
+    height: auto;
+}
+
+.adl-close-btn {
+    background-color: transparent;
+    border: none; 
+    font-size: 0.8rem; 
+    cursor: pointer; 
+    color: #333; 
+    z-index: 1000; 
+    color: #77818b;
+}
+
+/* Banco Occidente*/
+
+.adl-modal-content-occidente{
+    padding: 7px !important;
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.container-occidente {
+    margin-top: -20px;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.adl-step-occidente {
+    display: flex;
+    color: #252B31;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.adl-step1-occidente{
+    padding: 20px;
+}
+
+.adl-step-occidente .dots > div {
+    background: transparent;
+    border-radius: 0; 
+    display: inline-block;
+    height: 4px; 
+    width: 4px; 
+    transform: rotate(45deg); 
+    vertical-align: middle;
+    border: 1px solid #0043a9; 
+    background-color: #0043a9;
+    margin: 0 4px;
+}
+
+.adl-step-occidente .dots > div.dot-active {
+    background: transparent; 
+    border-radius: 0; 
+    display: inline-block;
+    height: 8px; 
+    width: 8px; 
+    transform: rotate(45deg); 
+    vertical-align: middle;
+    border: 1px solid #0048DB; 
+    position: relative;
+}
+
+.adl-step-occidente .dots > div.dot-active::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px; 
+    height: 4px; 
+    background: transparent;
+    border: 1px solid #0048DB; 
+    transform-origin: center;
+    margin-left: -3px; 
+    margin-top: -3px;
+    background-color: #0043a9;
+}
+
+
+.adl-step-occidente > div:nth-child(4){
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+}
+
+.adl-step-occidente h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.7rem 0;
+}
+
+.steps-occidente-H3 {
+    padding-top: 10px;
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+}
+
+
+.adl-step-occidente img {
+    max-width: 250px;
+}
+
+.img-border-occidente {
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+}
+
+.steps-occidente-p {
+    text-align: center !important;
+    color: #77818b;
+}
+
+.adl-step-occidente p {
+    text-align: justify;
+}
+
+.adl-step-next-btn-occidente {
+    background: linear-gradient(to bottom, #1e6ab8, #0a4ea2);
+    border: none;
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 15px 0px !important;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 15px auto;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+
+.adl-step-next-btn-occidente-inicio {
+    border: none;
+    border-radius: 100px;
+    color: #FFF;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: normal;
+    width: 100%;
+}
+
+.adl-step-back-btn-occidente {
+    background: #FFF;
+    border: 1px solid #0043a9;
+    border-radius: 100px;
+    color: #0043a9;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 50px;
+}
+
+.adl-btn-occidente, .adl-btn-occidente:hover, .adl-btn-occidente:visited {
+    background-color: #0043a9;
+    min-width: 100px;
+}
